@@ -1,0 +1,46 @@
+<%- include("_header") -%>
+
+<h1>Create Customers</h1>
+
+<form action="/Create_Customers" method="POST">
+    <table>
+        <tr>
+            <td><label for="id">ID</label>:</td>
+            <td><input type="number" name="id" id="id" required/></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label for="firstname">Firstname</label>:</td>
+            <td><input type="text" name="firstname" id="firstname" required/></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label for="lastname">Lastname</label>:</td>
+            <td><input type="text" name="lastname" id="lastname" required/></td>
+            <td>(Required)</td>
+        </tr>
+        <tr>
+            <td><label for="state">State</label>:</td>
+            <td><input type="text" name="prod_desc" id="prod_desc" /></td>
+            <td>(equals)</td>
+        </tr>
+        <tr>
+            <td><label for="sales">Sales YTD</label>:</td>
+            <td><input type="number" name="sales" id="sales" /></td>
+            <td>(greater than or equal)</td>
+        </tr>
+        <tr>
+            <td><label for="previous">Previous Years Sales </label>:</td>
+            <td><input type="number" name="previous" id="previous" /></td>
+            <td>(greater than or equal)</td>
+        </tr>
+        <tr>
+            <td span="2">
+                <input type="submit" class="btn btn-primary" value="Create" />
+                <input type="reset" class="btn btn-primary" value="Reset" />
+            </td>
+        </tr>
+    </table>
+</form>
+<br>
+<%- include("_footer") -%>   
